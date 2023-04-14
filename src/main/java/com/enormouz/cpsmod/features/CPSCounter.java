@@ -15,6 +15,9 @@ public class CPSCounter {
 
     @SubscribeEvent
     public void onMouseClick(InputEvent.MouseInputEvent event) {
+        if (CPSMod.mc.thePlayer == null || CPSMod.mc.theWorld == null) {
+            return;
+        }
         int leftClickButton = CPSMod.mc.gameSettings.keyBindAttack.getKeyCode();
         if (Mouse.getEventButtonState() && Mouse.getEventButton() == leftClickButton + 100) {
             leftClickList.add(System.currentTimeMillis());
