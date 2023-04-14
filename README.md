@@ -1,2 +1,2 @@
 # CPSMod
-Simple CPS Mod for Minecraft 1.8.9.
+Simple CPS Counter Mod for Minecraft 1.8.9.
